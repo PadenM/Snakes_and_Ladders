@@ -5,7 +5,7 @@
 
 
 // Note:	File picker not implemented.
-//			On line 538 change string passed to SnakeLadder.game() 
+//			On line 538 change string passed to SnakeLadder.gameInstance() 
 //			for different text file names. Default is Maze 1.txt
 
 #include <iostream>
@@ -61,7 +61,7 @@ class Maze {
 public:
 	Maze();
 	void loadMaze(string fileName);
-	void game(string textFile);
+	void gameInstance(string textFile);
 private:
 	Node* gameMaze;
 	vector<Player> playerVec;
@@ -371,15 +371,16 @@ void Maze::loadMaze(string fileName)
 	}
 }
 
-//Function:	game	
+//Function:	gameInstance	
 //Inputs:		textFile containing maze config data
 //Outputs:	
 //Description:	Contains the maze traversal and current players in game instance
-void Maze::game(string textFile)
+void Maze::gameInstance(string textFile)
 {
 	if (!std::ifstream(textFile.c_str()))
 	{
 		cout << "\nConfiguration file not found\n";
+		std::getchar();
 	}
 	else
 	{
@@ -535,7 +536,7 @@ void Maze::game(string textFile)
 int main()
 {
 	Maze SnakeLadder;
-	SnakeLadder.game("Maze 4.txt");
+	SnakeLadder.gameInstance("Maze 1.txt");
 	return 0;
 }
 

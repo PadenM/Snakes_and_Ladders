@@ -112,6 +112,12 @@
   <ItemGroup>
     <ClCompile Include="Snakes_and_Ladders.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Maze 1.txt" />
+    <Text Include="Maze 2.txt" />
+    <Text Include="Maze 3.txt" />
+    <Text Include="Maze 4.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
