@@ -379,7 +379,7 @@ void Maze::gameInstance(string textFile)
 {
 	if (!std::ifstream(textFile.c_str()))
 	{
-		cout << "\nConfiguration file not found\n";
+		cout << "\nConfiguration file not found.\nMake sure Maze.txt is is the same directory as this exe.";
 		std::getchar();
 	}
 	else
