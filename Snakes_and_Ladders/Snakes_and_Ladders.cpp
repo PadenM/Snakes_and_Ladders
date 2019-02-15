@@ -5,8 +5,8 @@
 
 
 // Note:	File picker not implemented.
-//			4 different maze configs included 
-//			for different text file names. Default is Maze 1.txt
+//			Different file names can be accepted for config by changing
+//			"Maze.txt" on line 539 to desired name.
 
 #include <iostream>
 #include <string>
