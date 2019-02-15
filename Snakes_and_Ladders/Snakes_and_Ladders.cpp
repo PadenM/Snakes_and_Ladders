@@ -5,7 +5,7 @@
 
 
 // Note:	File picker not implemented.
-//			On line 538 change string passed to SnakeLadder.gameInstance() 
+//			4 different maze configs included 
 //			for different text file names. Default is Maze 1.txt
 
 #include <iostream>
@@ -446,7 +446,7 @@ void Maze::gameInstance(string textFile)
 						break;
 					}
 					cout << "\n" << playerVec[i].getPlayerName() << " is currently in Room "
-						<< playerVec[i].getPos()->getNodeName() << " of the maze. You can go ";
+						<< playerVec[i].getPos()->getNodeName() << " . You can go ";
 					//Loops to print all of the available directions to travel next
 					bool first = true;
 					for (int k = 0; k < 4; k++)
@@ -536,7 +536,7 @@ void Maze::gameInstance(string textFile)
 int main()
 {
 	Maze SnakeLadder;
-	SnakeLadder.gameInstance("Maze 1.txt");
+	SnakeLadder.gameInstance("Maze.txt");
 	return 0;
 }
 
